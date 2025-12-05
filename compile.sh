@@ -8,3 +8,4 @@ javac -d out $(find src -name "*.java")
 
 # Run the Broker Server
 java -cp out Broker/BrokerServer
+
