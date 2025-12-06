@@ -663,7 +663,6 @@ public class ChannelImpl extends UnicastRemoteObject implements Channel
                 {
                     /* Pop head of subscriber queue */
                     Message msg = data.getSubscriberQueue().take();
-                    int attempts = 0;
 
                     /* Check for duplicates */
                     if (isDuplicate(msg.getMessageID()))
